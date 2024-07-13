@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas's Delícia</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Pedido de Pizza</h1>
+    <hr>
+    <form name="form-main" onsubmit="" method="post">
+        
+        <h2>Informações do Cliente:</h2>
+        <div class="form-personal-data">
+            <label for="name">Nome: </label><input type="text" name="name"> <br>
+            <label for="phone">Telefone: </label><input type="text" name="phone" placeholder="(XX) XXXXX-XXXX"> <br>
+            <label for="address">Endereço de Entrega: </label><input type="text" name="address"> <br>
+            <label for="neighborhood">Bairro: </label><input type="text" name="neighborhood"> <br>
+            <label for="cep">CEP: </label><input type="text" name="cep" placeholder="00000-000"> <br>
+            <label for="complement">Complemento</label><input type="text" name="complement"> <br>
+            <label for="email">E-mail: </label><input type="email" name="email">
+        </div>
+
+        <hr>
+
+        <h2>Escolha sua Pizza</h2>
+        <div class="form-options-pizza">
+            <p>1. Tamanho da Pizza:</p>
+            <input type="radio" name="size" value="pequena"> Pequena (4 fatias) <br>
+            <input type="radio" name="size" value="media"> Média (8 fatias) <br>
+            <input type="radio" name="size" value="grande"> Grande (12 fatias)
+            <p>2. Massa:</p>
+            <input type="radio" name="pasta" value="tradicional"> Tradicional <br>
+            <input type="radio" name="pasta" value="fina"> Fina <br>
+            <input type="radio" name="pasta" value="integral"> Integral
+            <p>3. Sabores:</p>
+            <input type="radio" name="flavor" value="mussarela"> Mussarela <br>
+            <input type="radio" name="flavor" value="calabresa"> Calabresa <br>
+            <input type="radio" name="flavor" value="franco-catupiry"> Frango com Catupiry <br>
+            <input type="radio" name="flavor" value="portuguesa"> Portuguesa <br>
+            <input type="radio" name="flavor" value="marguerita" disabled> Marguerita <br>
+            <input type="radio" name="flavor" value="quatro-queijos" disabled> Quatro Queijos <br>
+            <input type="radio" name="flavor" value="vegetariana"> Vegetariana
+            <p>4. Adicionais:</p>
+            <input type="checkbox" name="additional[]" value="azeitona"> Azeitona <br>
+            <input type="checkbox" name="additional[]" value="bacon"> Bacon <br>
+            <input type="checkbox" name="additional[]" value="cebola"> Cebola <br>
+            <input type="checkbox" name="additional[]" value="milho"> Milho <br>
+            <input type="checkbox" name="additional[]" value="oregano"> Orégano <br>
+            <p>5. Bebidas:</p>
+            <input type="radio" name="drink" value="refri-350ml"> Refrigerante 350ml <br>
+            <input type="radio" name="drink" value="refri-600ml"> Refrigerante 600ml <br>
+            <input type="radio" name="drink" value="refri-1l"> Refrigerante 1L <br>
+            
+            <input type="radio" name="drink" value="suco"> Suco <br>
+            <p>6. Observações:</p>
+            <textarea name="observation" rows="5" cols="30"></textarea>
+        </div>
+        
+        <hr>
+
+        <h2>Forma de Pagamento:</h2>
+        <div class="form-payment">
+            <input type="radio" name="payment" value="dinheiro"> Dinheiro <br>
+            <input type="radio" name="payment" value="credito"> Cartão de Crédito <br>
+            <input type="radio" name="payment" value="debito"> Débito <br>
+            <input type="radio" name="payment" value="pix"> Pix <br>
+            <label for="change">Troco para: R$</label><input type="text" name="change">
+        </div>
+
+        <hr>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
